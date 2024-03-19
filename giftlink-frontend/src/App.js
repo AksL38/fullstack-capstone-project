@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import MainPage from './components/MainPage/MainPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -22,7 +22,7 @@ function App() {
       <Routes>
         {/* the final code will not pass the products to every page, but each page will call the server API */}
         <Route path="/" element={<MainPage />} />
-        <Route path="/app/profile" element={<Profile/>} />
+        <Route path="/app/profile" element={<Profile />} />
         <Route path="/app/search" element={<SearchPage />} />
         <Route path="/app/product/:productId" element={<DetailsPage />} />
         <Route path="/app/login" element={<LoginPage />} />
